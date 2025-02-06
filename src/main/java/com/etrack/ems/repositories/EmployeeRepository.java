@@ -1,8 +1,9 @@
 package com.etrack.ems.repositories;
 
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Repository
-public class EmployeeRepository {
+import com.etrack.ems.entities.EmployeeModel;
+
+public interface EmployeeRepository extends JpaRepository<EmployeeModel, Integer> {
 
 }
